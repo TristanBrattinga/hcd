@@ -6,20 +6,137 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Star Wars: Revenge of the Sith</title>
 </head>
 <body>
-    <header></header>
-    <main>
-        <section>
-            <video id="duel" controls>
-                <source src="https://drive.google.com/file/d/176AIdQDlOaarrg1pq_Slp1JeskE7zCJK/view?usp=sharing" type="video/mp4">
-                <track src="./assets/subs-en.vtt" kind="subtitles" srclang="en" label="English" default>
-                <track src="./assets/subs-nl.vtt" kind="subtitles" srclang="nl" label="Nederlands">
-            </video>
-        </section>
-    </main>
-    <footer></footer>
+<header>
+    <h1>Star Wars: Revenge of the Sith</h1>
+    <h2>Duel on Mustafar</h2>
+</header>
+<main>
+    <section class="player-header">
+        <nav id="effects-timeline">
+            <h3>Jump to Visual Effects</h3>
+            <ul>
+                <li><button data-time="73">Lightsaber Clash</button></li>
+                <li><button data-time="91">Kick</button></li>
+                <li><button data-time="120.5">Choke</button></li>
+                <li><button data-time="156">Force Push</button></li>
+                <li><button data-time="173.5">Alarm</button></li>
+            </ul>
+        </nav>
+        <div id="subs-color-control">
+            <h3>Change Subtitle Colors</h3>
+            <ul>
+                <li>
+                    <label>
+                        Change Anakin's Subtitle Color
+                        <input id="anakin-color" type="color" value="#E51115">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Change Obi-Wan's Subtitle Color
+                        <input id="obi-wan-color" type="color" value="#3784D6">
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="player">
+        <video id="video" controls muted>
+            <!-- Video was taken from https://www.youtube.com/watch?v=JV8InNhMdkA -->
+            <source src="./assets/duel.mp4" type="video/mp4">
+        </video>
 
+        <div id="closed-captions">
+            <p id="line-1" class="sound-effect music" data-start="0" data-end="5">[♪ Ominous music is playing ♪]</p>
+            <p id="line-2" data-speaker="anakin" data-start="5.0" data-end="7.0" data-tone="angry">You will not
+                take
+                her from
+                me!</p>
+            <p id="line-3" data-speaker="obi-wan" data-start="7.6" data-end="11.5">Your anger and your lust for
+                power
+                have
+                already done that.</p>
+            <p id="line-4" data-speaker="obi-wan" data-start="14.7" data-end="19.8">You have allowed this dark
+                lord to
+                twist
+                your mind, until now-</p>
+            <p id="line-5" data-speaker="obi-wan" data-start="20.5" data-end="24.4">until now you have become the
+                very
+                thing
+                you
+                swore to destroy.</p>
+            <p id="line-6" data-speaker="anakin" data-start="24.5" data-end="26.5">Don't lecture me, Obi-Wan.</p>
+            <p id="line-7" data-speaker="anakin" data-start="26.6" data-end="29.2">I see through the lies of the
+                Jedi
+                .</p>
+            <p id="line-8" data-speaker="anakin" data-start="29.5" data-end="32.7">I do not fear the dark side as
+                you
+                do.</p>
+            <p id="line-9" data-speaker="anakin" data-start="34" data-end="36.5">I have brought</p>
+            <p id="line-10" data-speaker="anakin" data-start="34.5" data-end="38.5">peace</p>
+            <p id="line-11" data-speaker="anakin" data-start="34.7" data-end="38.5">freedom</p>
+            <p id="line-12" data-speaker="anakin" data-start="36.6" data-end="38.5">justice</p>
+            <p id="line-13" data-speaker="anakin" data-start="38.4" data-end="40.4">security to my new Empire.</p>
+            <p id="line-14" data-speaker="obi-wan" data-start="41.5" data-end="43.5">Your new Empire?</p>
+            <p id="line-15" data-speaker="anakin" data-start="43.6" data-end="46.9">Don't make me kill you.</p>
+            <p id="line-16" data-speaker="obi-wan" data-start="47.0" data-end="51.5">Anakin, my allegiance is to
+                the
+                Republic,
+                to democracy!</p>
+            <p id="line-17" data-speaker="anakin" data-start="51.6" data-end="54.2">If you're not with me...</p>
+            <p id="line-18" data-speaker="anakin" data-start="55.3" data-end="57.1">Then you're my enemy.</p>
+            <p id="line-19" data-speaker="obi-wan" data-start="59.2" data-end="61.7">Only a Sith deals in absolutes
+                .</p>
+            <p id="line-20" data-speaker="obi-wan" data-start="64.3" data-end="66.7">I will do what I must.</p>
+            <p id="line-21" data-speaker="anakin" data-start="66.8" data-end="69.2">You will try.</p>
+            <p id="line-22" class="sound-effect" data-start="69.3" data-end="71">[Lightsabers ignite]</p>
+            <p id="line-23" class="sound-effect" data-start="71.1" data-end="73">[High tension music is playing]</p>
+            <p id="line-24" class="sound-effect" data-start="91.25" data-end="92.5">[Kick to the body]</p>
+            <p id="line-25" class="sound-effect" data-start="121" data-end="132">[Obi-Wan choking]</p>
+            <p id="line-26" class="sound-effect" data-start="174" data-end="179">[Alarm sounding]</p>
+        </div>
+        <article class="settings-panel">
+            <input type="checkbox" id="settings-toggle" hidden>
+            <label for="settings-toggle" class="settings-button">⚙️ Settings</label>
+            <aside class="settings-menu">
+                <h3>Customize Experience</h3>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="toggle-colored-text">
+                            Colored Text
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="toggle-reduced-motion">
+                            Reduced Motion
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="toggle-subtitles">
+                            Hide Subtitles
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox" id="toggle-sfx-visuals" checked>
+                            Sound Effect Visuals
+                        </label>
+                    </li>
+                </ul>
+            </aside>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>This video was taken from: <a href="https://www.youtube.com/watch?v=JV8InNhMdkA" target="_blank">https://www.youtube.com/watch?v=JV8InNhMdkA</a></p>
+</footer>
+<div id="alarm-overlay"></div>
+<script src="./script.js" defer></script>
 </body>
 </html>
