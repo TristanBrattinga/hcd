@@ -1,8 +1,8 @@
-# Human Centered Design
+# ![Human Centered Design](./readme-images/hcd.png)
 
-Student: Tristan Brattinga
-Studentnr: 500881296
-Docent(en): Vasilis van Gemert & Marie van Driessche
+- Student: Tristan Brattinga(500881296)
+- Duur: 31 maart 2025 - 25 april 2025 
+- Docent(en): Vasilis van Gemert & Marie van Driessche
 
 ## 📝 Opdrachtomschrijving
 
