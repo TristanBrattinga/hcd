@@ -90,7 +90,7 @@ opdracht. Hierin laat hij zien hoe hij de ondertitelingen opbouwt met HTML en hi
 geeft. De logica in dit voorbeeld ga ik volgende week toepassen en verwerken binnen mijn eigen project. Verder vond 
 hij het een leuke keuze voor film en is benieuwd wat ik hiermee ga doen. 
 
-[Vasilis Web Typography](https://github.com/vasilisvg/web-typography-21-22)
+[Web Typography by Vasilis](https://github.com/cmda-minor-web/web-typography-22-23)
 
 ### 🧠 Conclusie
 
@@ -100,7 +100,7 @@ voor muziek, emotie, sfeer en effecten.
 
 ## 🤖 Week 3: Werkend Prototype
 
-<img src="./readme-images/week-3.png" alt="Week 3 prototype" width="500">
+<img src="./readme-images/week-3.png" alt="Week 3 prototype" width="800">
 
 ### 💬 Feedback van Darice
 
