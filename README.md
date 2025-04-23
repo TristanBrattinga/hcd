@@ -1,5 +1,9 @@
 # Human Centered Design
 
+Student: Tristan Brattinga
+Studentnr: 500881296
+Docent(en): Vasilis van Gemert & Marie van Driessche
+
 ## 📝 Opdrachtomschrijving
 
 Bij het vak Human Centered Design ga ik aan de slag met het ontwerpen van een web toepassing voor een persoon met
@@ -37,8 +41,6 @@ accentueren en niet volledig visueel hoef uit te leggen. Voor Darice zijn er twe
 
 ## 🔍 Week 1: Project Verkenning
 
----
-
 Voor de aanvang van week 1 van het vak HCD ben ik ernstig ziek geworden, waardoor ik de hele week niet bij de
 lessen op school aanwezig kon zijn. Ik heb mij in de eerste week ingelezen in de opdracht en gekeken naar wat de
 vereisten zijn voor het succesvol voltooien van dit vak. Ik heb gekozen voor de film opdracht. Ik hou niet van podcasts 
@@ -61,8 +63,6 @@ naar deze film kijken met mijn video player.
 
 ## 👣 Week 2: Eerste Stappen
 
----
-
 In week 2 was ik gelukkig weer in staat om bij de lessen aanwezig te zijn. Aangezien wij woensdag en donderdag het vak 
 HCD krijgen en er iedere week op woensdag wordt getest, begon ik gelijk op deze woensdag met mijn eerste test. Ik had 
 nog niks in code staan, omdat ik ziek ben geweest en graag eerst wilde kijken wat Darice van mijn film keuze vindt 
@@ -82,8 +82,6 @@ en het fragment. Ook wilde ik een idee vormen over de belangrijkste aandachtspun
 ### 🧠 Conclusie
 
 ## 🤖 Week 3: Werkend Prototype
-
----
 
 ### 💬 Feedback van Darice
 
@@ -113,8 +111,6 @@ Na het verkrijgen van de feedback van Darice
 
 ## 🏁 Week 4: Afronden en Fine-tunen
 
----
-
 ### 💬 Feedback van Marie
 
 Deze week was Darice niet aanwezig, maar Marie van Driessche. Marie is een lerares die les geeft bij CMD. Ze is haar 
@@ -140,8 +136,6 @@ Als ik meer tijd zou hebben voor dit project zou ik de volgende functionaliteite
 2. 
 
 ## 📚 Bronnen
-
----
 
 - Karsen Jackson. (2023, January 31). Star Wars Revenge of the Sith  Anakin vs Obi Wan  4K HDR + AI 60fps [Video]. YouTube. https://www.youtube.com/watch?v=JV8InNhMdkA
 - HTML: HyperText Markup Language | MDN. (2025, 10 april). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/color
