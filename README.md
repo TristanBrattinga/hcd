@@ -59,7 +59,7 @@ naar deze film kijken met mijn video player.
 
 <img src="./readme-images/mustafar-meme.jpg" alt="Mustafar meme" width="500">
 
-<caption>Bron: <a href="https://imgflip.com/i/1zzgz9">Image tagged in sith,obi-wan,anakin,mustafar,absolutes. (z.d.). Imgflip. https://imgflip.com/i/1zzgz9</a></caption>
+<caption>Bron: https://imgflip.com/i/1zzgz9 </caption>
 
 ## 👣 Week 2: Eerste Stappen
 
@@ -75,11 +75,27 @@ en het fragment. Ook wilde ik een idee vormen over de belangrijkste aandachtspun
   'iconisch' is, omdat hij/zij het nog nooit heeft gehoord.
 - De speling tussen goed en kwaad geeft veel mogelijkheden voor visuele toevoegingen en vertalingen. Denk aan de 
   kleuren blauw (goed) en rood (kwaad).
-- 
+
+Op donderdag ben ik aan de slag gegaan met de code. Ik heb de video gedownload van YouTube met de tool Cobalt. Ik
+ben toen op zoek gegaan naar ondertitelingen in het bestandsformaat `.srt`. Mijn eerste toepassing was om direct 
+ondertiteling bestanden toe te voegen aan de video met de `<track>` tag. Het leek mij leuk om te kunnen switchen 
+tussen Engels en Nederlands. In de les vertelde Marie mij dat dit niet genoeg is en dat er zo te weinig toevoeging 
+is. Simpelweg ondertitelingen toevoegen aan de video is niet voldoende.
 
 ### 📈 Voortgangsgesprek Vasilis
 
+Tijdens mijn eerste voortgangsgesprek met Vasilis, vertelde hij mij over een oud project van hem waarin hij ook met 
+typografie werkt op het web. Dit is een mooi voorbeeld voor deze opdracht en kan ik gebruiken voor mijn eigen 
+opdracht. Hierin laat hij zien hoe hij de ondertitelingen opbouwt met HTML en hier met CSS & JS, functionaliteit aan 
+geeft. De logica in dit voorbeeld ga ik volgende week toepassen en verwerken binnen mijn eigen project. Verder vond 
+hij het een leuke keuze voor film en is benieuwd wat ik hiermee ga doen. 
+
+![Vasilis Web Typography](https://github.com/vasilisvg/web-typography-21-22)
+
 ### 🧠 Conclusie
+
+Ik heb een goed film fragment uitgekozen voor deze opdracht. Ik moet wel zorgen dat ik visueel duidelijk overbreng 
+wat er zo iconisch is aan de lightsabers en hoe dit klinkt.
 
 ## 🤖 Week 3: Werkend Prototype
 
@@ -100,10 +116,11 @@ en het fragment. Ook wilde ik een idee vormen over de belangrijkste aandachtspun
 ### 📈 Voortgangsgesprek Vasilis
 
 Op vrijdag heb ik mijn tweede voortgangsgesprek met Vasilis gehad. Dit ging heel goed en hij was zeer te spreken 
-over mijn product. 
+over mijn prototype. 
 
 Een aantal key punten uit het gesprek:
-- Heel goed dat ik verschillende lettertypes heb gebruikt voor ieder personage. Dit geeft meer vorm aan de toon 
+- Heel goed dat ik verschillende lettertypes heb gebruikt voor ieder personage. Dit geeft meer vorm aan de toon.
+- Alle visuele effecten veel meer aandikken. Waar ik denk dat het juist te veel is, zal Darice of een ander graag m 
 
 ### 🧠 Conclusie
 
@@ -145,3 +162,4 @@ Als ik meer tijd zou hebben voor dit project zou ik de volgende functionaliteite
 - Browse Fonts - Google Fonts. (z.d.). Google Fonts. https://fonts.google.com/
 - SVG Wars: May the morph be with you. (GSAP3). (z.d.). CodePen. https://codepen.io/PointC/pen/mmMXQK
 - cobalt. (z.d.). Cobalt. https://cobalt.tools/
+- MP4 to MP3 | CloudConvert. (z.d.). https://cloudconvert.com/mp4-to-mp3
