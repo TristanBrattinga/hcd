@@ -133,9 +133,9 @@ Na het verkrijgen van de feedback van Darice
 
 ### 💬 Feedback van Marie
 
-Deze week was Darice niet aanwezig, maar Marie van Driessche. Marie is een lerares die les geeft bij CMD. Ze is haar 
-hele leven al doof. Zij is bij alle testrondes en lessen aanwezig geweest en vervult deze week de rol van Darice als 
-testpersoon. Zij heeft mij de volgende punten van feedback gegeven:
+Deze week was Darice niet aanwezig, maar Marie. Ze is haar hele leven al doof. Zij is bij alle testrondes en lessen 
+aanwezig geweest en vervult deze week de rol van Darice als testpersoon. Zij heeft mij de volgende punten van feedback 
+gegeven:
 
 - Marie was te spreken over mijn algehele vormgeving.
 - Zij vond de implementatie voor kleuren manipulatie van de ondertitelingen een leuke toevoeging. Wel zei ze hierbij 
@@ -146,6 +146,28 @@ testpersoon. Zij heeft mij de volgende punten van feedback gegeven:
 
 ### 🧠 Conclusie
 
+### Exclusive Design Principes
+
+Ik heb de gestelde design principes vervuld: 
+
+1. Study situation
+   1. Ik heb een toepassing voor een doof persoon ontwikkeld. Visuele onderdelen zijn van extreem belang bij het maken 
+   van een prototype voor deze persoon. Dit heb ik gedaan d.m.v. lettertypes, kleuren, animaties en tekst.
+2. Ignore conventions
+   1. Door de gebruiker zijn eigen ervaring aan te laten passen, heeft de gebruiker meer inspraak op hoe de film 
+      wordt weergegeven. Hier is normaal gesproken niet veel mee te doen.
+3. Prioritize identity
+   1. Darice ziet ook minder met één oog, dus plaatsing van ondertiteling en kleuren contrasten zijn van belang 
+      binnen haar individuele situatie. Ik heb hiermee rekening gehouden door de ondertiteling gecentreerd te houden 
+      en niet te klein. Zij zei wel dat ze het liefst een sans-serif font heeft omdat dit makkelijker leest. Ik heb 
+      er toch voor gekozen om Obi-Wan een serif font te geven, omdat dit een bepaalde hoogheid en belerend effect 
+      geeft. Dit is dus van toevoeging op het fragment. Verder heb ik het aanpassen van de gekleurde ondertitelingen 
+      toegevoegd naar aanleiding van haar feedback.
+4. Add nonsense
+   1. Als 'nonsense' ofwel nutteloze functionaliteit heb ik de tijdlijn knoppen toegevoegd om naar de verschillende 
+      visuele effecten te kunnen springen. Dit is niet van toevoegingen voor het bekijken van de film, maar helpt 
+      wel bij aan de UX wanneer de focus op animaties en visuele effecten ligt. Dit was ook een stuk makkelijker en 
+      fijner voor mijzelf tijdens het ontwikkelen 😅.
 
 ### ⚙️ Verdere Ontwikkelingen
 
@@ -153,7 +175,6 @@ Als ik meer tijd zou hebben voor dit project zou ik de volgende functionaliteite
 1. Een indicator die tijdens het gevecht aangeeft wie er de overhand heeft met aan de ene kant een rode kleur en een 
    blauwe aan de andere kant. Ik zou dit zien als een 'win-meter', ofwel wie de overhand heeft als een soort 
    touwtje-trek gimmick. Dit zou ook bijdragen aan het principe: _Add nonsense_.
-2. 
 
 ## 📚 Bronnen
 
