@@ -100,7 +100,72 @@ voor muziek, emotie, sfeer en effecten.
 
 ## 🤖 Week 3: Werkend Prototype
 
-<img src="./readme-images/week-3.png" alt="Week 3 prototype" width="800">
+In deze week ben ik aan de slag gegaan met het bouwen van mijn 90% versie van mijn prototype. Ik wil de meeste 
+functionaliteiten verwerkt hebben zodat ik in de laatste week alleen nog maar hoef te finetunen.
+
+Ik maak gebruik van data-attributen op iedere regel ondertiteling om zo de start- en eindtijd aan te geven en deze 
+makkelijk te kunnen tweaken. In mijn JavaScript kan ik deze dan uitlezen en verwerken.
+
+```html
+<p id="line-2" data-speaker="anakin" data-start="5.0" data-end="7.0" data-tone="angry">You will not take her from me!</p>
+```
+```javascript
+// Select all the caption elements
+const captions = document.querySelectorAll("#closed-captions p")
+
+// Add a timeupdate event to the video
+video.addEventListener("timeupdate", () => {
+	// Create a currentTime variable for readability 
+	const currentTime = video.currentTime
+    // Loop over the captions
+	captions.forEach(p => {
+		// Parse the start and end time
+		const start = parseFloat(p.dataset.start)
+		const end   = parseFloat(p.dataset.end)
+        // Toggle an active class to show the correct caption if the currentTime is in between the start and end time
+		p.classList.toggle('active', currentTime >= start && currentTime <= end)
+	})
+})
+```
+
+Dit is hoe mijn video player er nu uit ziet:
+
+<img src="./readme-images/week-3.png" alt="Week 3 prototype" width="830">
+
+Ik heb een nogal lang fragment waar ik mee werk dus ik heb ervoor gekozen om een tijdlijn met buttons te creëren voor 
+de visuele effecten die ik toepas binnen het fragment. Door middel van deze buttons kan ik gemakkelijk naar de 
+verschillende effecten springen en hoe ik niet steeds handmatig naar de precieze tijd te navigeren. Dit is niet per 
+se van toevoeging voor een dove gebruiker, maar het is wel een klein stukje UX voor mij (developer) en wanneer de 
+focus ligt op de visuele effecten highlighten. Iedere button heeft het `data-time` attribuut wat aangeeft waar het 
+effect in het fragment zich afspeelt.
+```html
+<nav id="effects-timeline">
+            <h3>Jump to Visual Effects</h3>
+            <ul>
+                <li><button data-time="73">Lightsaber Clash</button></li>
+                <li><button data-time="91">Kick</button></li>
+                <li><button data-time="120.5">Choke</button></li>
+                <li><button data-time="156">Force Push</button></li>
+                <li><button data-time="173.5">Alarm</button></li>
+            </ul>
+        </nav>
+```
+```javascript
+// Select all the timeline buttons
+const timelineButtons = document.querySelectorAll("#effects-timeline button")
+
+// Loop over the buttons
+timelineButtons.forEach(button => {
+	// Create a click event for each button
+    button.addEventListener("click", () => {
+		// Parse the string from the data attr to a float (e.g. 120.5) and 
+        // set the currentTime of the video to that value
+        video.currentTime = parseFloat(button.dataset.time)
+        // PLay the video with the updated currentTime
+        video.play()
+    })
+})
+```
 
 ### 💬 Feedback van Darice
 
@@ -112,7 +177,7 @@ voor muziek, emotie, sfeer en effecten.
   toevoeging is.
 - Het 'alarm' effect is heel goed gedaan zegt ze. Het duurt niet te lang en geeft goed weer dat er een hard en 
   alarmerend geluid afgaat.
-- Darice begreep de timestamps voor de visuele effecten niet helemaal, omdat ze graag gewoon de film wil kijken. Ik 
+- Darice begreep de tijdlijn voor de visuele effecten niet helemaal, omdat ze graag gewoon de film wil kijken. Ik 
   heb haar uitgelegd dat het voor de film niet van toegevoegde waarde is, maar dat ik het heb geïntegreerd om het 
   navigeren naar de visuele effecten makkelijker te maken en deze ook wat meer te showcasen.
 
@@ -123,11 +188,17 @@ over mijn prototype.
 
 Een aantal key punten uit het gesprek:
 - Heel goed dat ik verschillende lettertypes heb gebruikt voor ieder personage. Dit geeft meer vorm aan de toon.
-- Alle visuele effecten veel meer aandikken. Waar ik denk dat het juist te veel is, zal Darice of een ander graag m 
+- Het gebruik van data-attributen voor de start- en eindtijden vond Vasilis een goede logica en implementatie. 
+- Alle visuele effecten veel meer aandikken. Waar ik denk dat het juist te veel is, zal Darice of een ander graag 
+  meer willen zien en meekrijgen. Het 'alarm' effect is hier een goed voorbeeld van. Ik denk dat het te veel is en 
+  Darice en Vasilis zien dat is precies goed. 
 
 ### 🧠 Conclusie
 
-Na het verkrijgen van de feedback van Darice 
+Mijn player ziet er heel goed uit en is iedereen over te spreken. Ik doe er goed aan om verschillende lettertypes te 
+gebruiken, maar ik moet uitkijken met gekleurde ondertitelingen. Darice heeft hier moeite mee en ziet liever wit op 
+zwart als ze een film kijkt. Wel zei ze dat ze het leuk zou vinden om zelf de kleuren aan te kunnen passen. Dit ga 
+ik zeker integreren in mijn prototype.
 
 ## 🏁 Week 4: Afronden en Fine-tunen
 
@@ -145,6 +216,7 @@ gegeven:
   binnen mijn fragment. Ik moet dit meer uitwerken.
 
 ### 🧠 Conclusie
+Ik moet toch echt nog meer de visuele effecten aandikken binnen mijn fragment. 
 
 ### Exclusive Design Principes
 

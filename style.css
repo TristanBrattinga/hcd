@@ -439,3 +439,69 @@ body:has(#toggle-reduced-motion:checked) {
         }
     }
 }
+
+#line-10, #line-11, #line-12 {
+    position: absolute;
+    color: var(--anakin-color);
+    font-size: 8rem !important;
+    left: 5%;
+}
+
+#line-10 {
+    top: 10%;
+}
+
+#line-11 {
+    top: 30%;
+}
+
+#line-12 {
+    top: 50%;
+}
+
+.timed-svg {
+    position: absolute;
+    top: 29%;
+    right: 21%;
+    animation: questioning .4s ease-in-out infinite alternate;
+}
+
+@keyframes questioning {
+    0% {
+        transform: rotate(5deg) scale(1.5);
+    }
+    50% {
+        transform: rotate(-5deg) scale(1.7);
+    }
+    100% {
+        transform: rotate(5deg) scale(1.5);
+    }
+}
+
+@keyframes lightsaber-clash {
+    from {
+        box-shadow: 0 0 0 #eee;
+    }
+    to {
+        box-shadow: 0 0 75px #eee;
+    }
+}
+
+.clash {
+    animation: lightsaber-clash .5s ease-out;
+}
+
+@keyframes fall-in {
+    from {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fall-in {
+    animation: fall-in .1s ease-out forwards;
+}
